@@ -1,0 +1,28 @@
+.title{
+  background-color: #0001;
+}
+
+.title > td{
+  text-align: center;
+  padding: 0 5px 0 5px;
+}
+
+.acao{
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.acao > a {
+  color: #0009;
+  padding-right: 0 3px 0 3px;
+}
+
+.acao > strong{
+  color:red;
+  padding-right: 0 3px 0 3px;
+  transition-delay: 400ms;
+}
+
+.acao > strong:hover, .acao > a:hover{
+  background-color: silver;
+}

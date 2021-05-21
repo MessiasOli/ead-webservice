@@ -1,17 +1,19 @@
 <div>
   <table>
     <thead>
-      <tr>
-        <td>Preço</td>
-        <td>Descrição</td>
-        <td>Titulo</td>
+      <tr class="title">
+        <td>#</td>
+        <td><strong>Titulo</strong></td>
+        <td><strong>Descrição</strong></td>
+        <td><strong>Preço</strong></td>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of listarProdutos">
-        <td>{{ p.price }}</td>
-        <td>{{ p.description }}</td>
+      <tr *ngFor="let p of listaProdutos">
+        <td class="acao"><strong (click)="excluir(p._id)">x </strong><a (click)="editar(p._id)">editar</a></td>
         <td>{{ p.title }}</td>
+        <td>{{ p.description }}</td>
+        <td>{{ p.price }}</td>
       </tr>
     </tbody>
   </table>

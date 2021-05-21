@@ -1,3 +1,10 @@
 <main>
-  <app-listar></app-listar>
+  <app-listar (editarProduto)="traferirProduto($event)"></app-listar>
+
+  <span *ngIf="mostrarCadastro; else elseBlock">
+    <app-cadastrar></app-cadastrar>
+  </span>
+  <ng-template #elseBlock>
+    <app-editar prod="{{produto}}" (cancelarForm)="trocarParaCadastro($event)"></app-editar>
+  </ng-template>
 </main>

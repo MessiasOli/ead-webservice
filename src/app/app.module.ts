@@ -4,15 +4,21 @@ import { HttpClientModule } from "@angular/common/http"
 
 import { AppComponent } from './app.component';
 import { ListarComponent } from './listar/listar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { FormsModule } from '@angular/forms';
+import { EditarComponent } from './editar/editar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListarComponent
+    ListarComponent,
+    CadastrarComponent,
+    EditarComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
